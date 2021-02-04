@@ -1,0 +1,49 @@
+/* media queries */
+/* iPadPro needs work */
+// $iPadPro: "(min-device-width: 1024px) and (max-device-width: 1366px)";
+// $tablet: "(min-width: 768px) and (max-width: 1024px)";
+// $tabletLandscape: "(min-width: 768px) and (max-width: 1024px) and (orientation : landscape)";
+// $desktop: "(min-width: 1024px)";
+// $phone: "(min-device-width: 320px) and (max-device-width: 736px)";
+// $phone6: "(min-device-width: 375px) and (max-device-width: 667px)";
+// $phone6Plus: "(min-device-width: 414px) and (max-device-width: 736px)";
+
+// New Media Queries
+$iPadPro: "(min-width: 1024px) and (max-width: 1366px)";
+$tablet: "(min-width: 768px) and (max-width: 1024px)";
+$tabletLandscape: "(min-width: 768px) and (max-width: 1024px) and (orientation : landscape)";
+$desktop: "(min-width: 1024px)";
+$phone: "(min-width: 320px) and (max-width: 736px)";
+$phone6: "(min-width: 375px) and (max-width: 667px)";
+$phone6Plus: "(min-width: 414px) and (max-width: 736px)";
+
+$mobile767: "(max-width: 767px)";
+$mobile367: "(max-width: 367px)";
+// New Media Queries
+
+$Nunito: 'Nunito';
+
+// Color
+$SiteColor: #252733;
+$blue: #1a98f7;
+$white: #fff;
+$black: #000;
+$red: #DF0000;
+$BorderColor:#171717;
+// Color
+
+
+// font Weight
+$xlbold: 900;
+$exbold: 800;
+$bold: 700;
+$semibold: 600;
+$medium: 500;
+$normal: 400;
+// font Weight
+
+@mixin list-style-none {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

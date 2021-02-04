@@ -1,0 +1,160 @@
+@import '../../theme/global.scss';
+@import '../../theme/variable.scss';
+.login__container{ 
+ 	display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow-y: scroll;
+  @media screen and (max-width: 667px) {
+  	flex-direction: column;
+  	overflow: auto;
+  	height: auto;
+  }
+	/* Left Sidebar Css::Start */
+	>.login__sidebar{
+		width: 100%;
+	  max-width: 400px;
+	  padding: 50px 0 0;
+		background-color: #ffffff;
+		box-shadow: 0px 3px 35px #acceea;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: space-between;
+	  min-height: 100vh;
+	  @media screen and (max-width: 667px) {
+	  	max-width: 100%;
+	    padding: 20px;
+	    min-height: auto;
+      box-shadow: none;
+	  }
+	}
+	.main__logo{
+	  display: flex;
+	  flex-direction: column;
+	  align-items: self-start;
+	  justify-content: center;
+    padding: 0 25px;
+    @media screen and (max-width: 667px) {
+    	padding: 0px;
+    }
+	}
+	.main__logo img{
+		max-width: 125px;
+	 margin-bottom: 30px;
+	}
+	.main__logo .logo__title{	
+		font-size: 28px;
+		font-weight: 600;	
+	  margin-bottom: 30px;
+	}
+	.slogan{
+		color: #282828;
+		font-size: 22px;
+	  font-weight: normal;
+	  text-align: left;
+	}
+	.sidebar__bottom{
+		background-image: url("../../images/login_btm.png"); 
+	  background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    padding-bottom: 86px;
+  	@media screen and (max-width: 667px) {
+	    background-size: contain;
+	    width: 100%;
+	    padding-bottom: initial;
+	    background: none;
+    }
+		.mobile_img{ 
+	   	transform: translate(264px, 25%);
+	    max-width: 229px;
+			@media screen and (max-width: 667px) {
+		    transform: translate(0, 0%);
+		    margin: 0 auto;
+		    display: block;
+			}
+		}
+	}
+	/* Left Sidebar Css::End */
+	.main__container {
+		width: 100%;
+	}
+	.form__section {
+		max-width: 460px;
+		width: 100%;
+		margin: 0 auto;
+	  padding: 0 15px;
+		@media screen and (max-width: 667px) {
+	    padding: 20px 15px;
+		}
+		.title{
+		  font-size: 2.25rem;
+		  color: #262b40;
+			font-weight: $bold; 
+			span,a{
+				color: #1f67f3;
+				border-bottom: 3px solid #262b40;
+			}
+			@media screen and (max-width: 667px) {
+	    	font-size: 28px;
+			}
+		}
+		.sub__title {
+			font-size: 1.35rem;
+			font-weight: 600;
+			margin: 40px 0;
+			color: #72787a;
+			a{
+				color: #2a2d2e;
+			}
+			@media screen and (max-width: 667px) {
+	    	font-size: 20px;
+			}
+			a:hover{
+				color: #1f67f3 !important;
+			}
+		}
+		form,.form__inner{
+			margin-top: 50px;
+			position: relative;
+			@media screen and (max-width: 667px) {
+				margin-top: 0px;
+			}
+		}
+		.forgot__link{
+			position: absolute;
+			top: 10px;
+			right: 0;
+			font-size: 14px;
+			color: #1f67f3;
+			font-weight: 600;
+		}
+		.btn__grp {
+			display: flex;
+			margin-top: 50px;
+			@media screen and (max-width: 768px) {
+				flex-direction: column;
+			}
+			button {
+				margin-right: 15px;
+				border-radius: 50px;
+				text-transform: uppercase;
+				font-size: 14px;
+				@media screen and (max-width: 768px) {
+					margin: 0px 0px 15px;
+				}
+			} 
+		}
+		.google__btn{
+			color: #2a2d2e;
+			border-color: #2a2d2e;
+			background-color: #fff;
+			.svg-icon{
+				margin-right: 10px;
+			}
+		}
+	} 
+}

@@ -1,0 +1,52 @@
+@import '../../theme/global.scss';
+@import '../../theme/variable.scss';
+.dashboard__container{
+	.dashboard__list{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		max-width: 1070px;
+		margin: 0 auto;
+		flex-wrap: wrap;
+    li{
+    	margin: 20px;
+	    width: 100%;
+	    max-width: 250px;
+    }
+		.card{
+	    align-items: center;
+	    overflow: hidden;
+	    padding: 35px 35px;
+	    cursor: pointer;
+			p{
+				margin: 15px 0px;
+			  font-size: 16px;
+		    font-weight: 400;
+		    color: #231f20 !important;
+			}
+			h3{
+				margin: 0px;
+		    color: #663399;
+		    font-size: 29px;
+			}
+			// &:hover{
+			// 	.add__money{
+			// 		transform: translate(0px, 0px);
+			// 	}
+			// }
+		}
+		.add__money{
+			position: absolute;
+			left: 0px;
+			bottom: 0;
+			width: 100%;
+			transform: translate(0px, 0px);
+			background-color: #53357f;
+			color: #fff;
+			text-align: center;
+    	transition: all .2s;
+  	  padding: 5px 0;
+  	  text-transform: uppercase;
+		}
+	}	
+}
